@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uday Diwane - Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<div id="progress"></div>
+
+<nav>
+  <span class="nav-name">Uday Diwane</span>
+  <ul class="nav-links">
+    <li><a href="#scene-beginning">Story</a></li>
+    <li><a href="#scene-projects">Projects</a></li>
+    <li><a href="#scene-skills">Skills</a></li>
+    <li><a href="#scene-method">Method</a></li>
+    <li><a href="#scene-future">Future</a></li>
+    <li><a href="#scene-contact">Connect</a></li>
+  </ul>
+</nav>
+
+<canvas id="bg-canvas"></canvas>
+
+<main>
+
+<section id="scene-intro">
+  <div class="intro-left">
+    <p class="intro-label">Data Analyst  — Portfolio • 2026</p>
+
+    <h1 class="intro-name">
+      UDAY<br>
+      <em>DIWANE</em>
+    </h1>
+
+    <p class="intro-tagline">
+      Data Analyst. Builder. Problem Solver.
+      <br><br>
+      From a diploma classroom in Washim to building
+      analytics projects that transform raw information
+      into meaningful insights and decisions.
+      <br><br>
+      Currently pursuing B.E. Information Technology
+      while continuously exploring data analytics,
+      visualization and real-world problem solving.
+    </p>
+
+    <div class="intro-actions">
+      <a href="#scene-projects" class="btn-primary">
+        See my work
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+      <a href="#scene-contact" class="btn-ghost">Get in touch</a>
+    </div>
+
+    <div class="intro-stats">
+      <div class="stat-item">
+        <div class="stat-num">7+</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">4+</div>
+        <div class="stat-label">Analytics Domains</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">2021</div>
+        <div class="stat-label">Journey Began</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="intro-right">
+    <div class="portrait-frame">
+      <div class="portrait-bg">
+        <div class="portrait-initials">
+          <img
+            src="assets/profile.webp"
+            alt="Uday Diwane"
+            class="portrait-photo"
+          />
+        </div>
+        <canvas id="portrait-canvas" style="position:absolute;inset:0;width:100%;height:100%"></canvas>
+      </div>
+      <div class="portrait-tag t1">
+        <span class="tag-dot"></span>Python &amp; SQL
+      </div>
+      <div class="portrait-tag t2">
+        <span class="tag-dot"></span>Power BI · Tableau
+      </div>
+      
+      <div class="portrait-tag t4">
+          <span class="tag-dot"></span>Open To Opportunities
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-invite" style="position:absolute;bottom:2rem;left:50%;transform:translateX(-50%)">
+    <div class="scroll-line"></div>
+    <span>SEE YOU IN THE NEXT PROJECT</span>
+  </div>
+</section>
+
+<section id="scene-beginning">
+  <p class="scene-eyebrow">Chapter One — The Beginning</p>
+  <h2 class="scene-heading">A road that started<br>in a small <em>classroom.</em></h2>
+
+  <div class="road-timeline">
+    <div class="road-spine"></div>
+
+    <div class="road-item">
+      <div class="road-dot"></div>
+      <div class="road-year">2021</div>
+      <div class="road-title">Government Polytechnic Washim</div>
+      <div class="road-sub">Enrolled in Diploma in Information Technology. The first time code made something happen on a screen  and the feeling of wanting to understand why.</div>
+      <span class="road-badge">📍 Washim, Maharashtra</span>
+    </div>
+
+    <div class="road-item">
+      <div class="road-dot"></div>
+      <div class="road-year">2022–2023</div>
+      <div class="road-title">The Curriculum Wasn't Enough</div>
+      <div class="road-sub">Started exploring outside the syllabus. Discovered Python. Discovered that you could ask questions to a dataset and it would answer. That changed everything.</div>
+      <span class="road-badge">🐍 First Python script</span>
+    </div>
+
+    <div class="road-item">
+      <div class="road-dot"></div>
+      <div class="road-year">2024</div>
+      <div class="road-title">Diploma Completed</div>
+      <div class="road-sub">Three years of foundation-building. Not just learning tools but learning how to think. How to break a problem into pieces. How to be methodical.</div>
+      <span class="road-badge">🎓 Diploma in IT</span>
+    </div>
+
+    <div class="road-item">
+      <div class="road-dot"></div>
+      <div class="road-year">2024 →</div>
+      <div class="road-title">B.E. Information Technology (Lateral Entry)</div>
+      <div class="road-sub">Entered Engineering through lateral entry. Began building end-to-end data analytics projects each one tackling a different real-world problem. Each one teaching something new.</div>
+      <span class="road-badge">🔬 Engineering begins</span>
+    </div>
+  </div>
+</section>
+
+<section id="scene-data">
+  <canvas id="data-canvas"></canvas>
+  <div class="scene-data-inner data-content">
+    <p class="scene-eyebrow">Chapter Two — The Obsession</p>
+    <h2 class="scene-heading" style="max-width:600px">Data became the lens.<br><em>Clarity</em> became the goal.</h2>
+
+    <div class="data-split">
+      <div>
+        <p class="data-quote">
+          "I didn't fall in love with data.<br>I fell in love with the moment when <em>messy, meaningless numbers became a clear decision.</em>"
+        </p>
+        <p style="font-size:0.88rem;color:var(--muted);margin-top:2rem;font-weight:300;line-height:1.75;max-width:400px">
+          Every project taught the same lesson: the data is never the problem. The question is the problem. Ask a better question, get a better answer.
+        </p>
+      </div>
+
+      <div class="transform-flow">
+        <div class="flow-step">
+          <div class="flow-icon raw">🗂️</div>
+          <div class="flow-text">
+            <h4>Raw, Messy Data</h4>
+            <p>Missing values. Inconsistent formats. Outliers. Duplicates. The unglamorous reality of every real dataset.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-icon clean">🧹</div>
+          <div class="flow-text">
+            <h4>Cleaning with Intent</h4>
+            <p>Not mechanical cleaning thoughtful decisions about what each anomaly means and what to do with it.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-icon model">🔍</div>
+          <div class="flow-text">
+            <h4>Exploration until Surprised</h4>
+            <p>EDA that goes beyond summaries. Finding the pattern nobody thought to look for.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-icon viz">📊</div>
+          <div class="flow-text">
+            <h4>Visualisation with Clarity</h4>
+            <p>If a chart needs a paragraph of explanation, it's failed. One idea. One glance.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-icon decide">💡</div>
+          <div class="flow-text">
+            <h4>Insights that Drive Decisions</h4>
+            <p>Analysis only earns its value when it changes what someone does next.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="scene-skills">
+  <p class="scene-eyebrow">Chapter Three — The Toolkit</p>
+  <h2 class="scene-heading">Tools earned,<br>not just <em>listed.</em></h2>
+
+<div class="skills-network-wrapper">
+
+  <p class="skills-subtitle">
+    Every tool below was learned through a real project,
+    a real question, a real dataset.
+  </p>
+
+  <canvas id="skills-network"></canvas>
+
+  <div id="skill-tooltip">
+    Hover over a skill to explore connections.
+  </div>
+
+  <div class="skills-chips">
+
+    <button class="skill-chip" data-skill="Python">Python</button>
+
+    <button class="skill-chip" data-skill="SQL">SQL</button>
+
+    <button class="skill-chip" data-skill="PostgreSQL">PostgreSQL</button>
+
+    <button class="skill-chip" data-skill="Power BI">Power BI</button>
+
+    <button class="skill-chip" data-skill="Excel">Excel</button>
+
+    <button class="skill-chip" data-skill="Pandas">Pandas</button>
+
+    <button class="skill-chip" data-skill="NumPy">NumPy</button>
+
+    <button class="skill-chip" data-skill="Matplotlib">Matplotlib</button>
+
+    <button class="skill-chip" data-skill="Seaborn">Seaborn</button>
+
+    <button class="skill-chip" data-skill="Tableau">Tableau</button>
+
+    <button class="skill-chip" data-skill="Git">Git</button>
+
+    <button class="skill-chip" data-skill="Statistics">Statistics</button>
+
+    <button class="skill-chip" data-skill="Machine Learning">Machine Learning</button>
+
+    <button class="skill-chip" data-skill="Data Cleaning">Data Cleaning</button>
+
+    <button class="skill-chip" data-skill="Storytelling">Storytelling</button>
+
+  </div>
+
+  <div id="skill-info-panel"></div>
+
+</div>
+</section>
+
+<section id="scene-projects">
+  <div class="projects-header">
+    <p class="scene-eyebrow">Chapter Four — The Work</p>
+    <h2 class="scene-heading">Built through <em>curiosity,</em><br> refined<em> through data.</em></h2>
+  </div>
+
+  <div class="project-world odd" id="proj1">
+    <div class="project-visual">
+      <canvas class="project-viz-canvas" id="viz-air"></canvas>
+    </div>
+    <div class="project-info">
+      <div>
+        <div class="project-num">01 </div>
+        <div class="project-category">Environmental</div>
+      </div>
+      <h3 class="project-title">Delhi Air Quality<br>Analysis</h3>
+      <p class="project-description">
+        AQI data from monitoring stations across Delhi analysed seasonally, spatially, and by pollutant type to understand when and where the air becomes dangerous.
+      </p>
+      <div class="project-impact">
+        <p><strong>Key insight:</strong> PM2.5 spikes correlate with temperature inversions in winter months, creating predictable danger windows that current public alerts miss.</p>
+      </div>
+      <div class="project-tools-row">
+        <span class="chip">Python</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">Seaborn</span>
+        <span class="chip">Matplotlib</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/udaydiwane/delhi-air-quality-analysis" class="btn-ghost" style="font-size:0.78rem;padding:0.55rem 1.2rem" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-world even" id="proj2">
+    <div class="project-visual">
+      <canvas class="project-viz-canvas" id="viz-heart"></canvas>
+    </div>
+    <div class="project-info">
+      <div>
+        <div class="project-num">02</div>
+        <div class="project-category">Healthcare</div>
+      </div>
+      <h3 class="project-title">Heart Disease<br>Dashboard</h3>
+      <p class="project-description">
+        A Power BI dashboard that transforms clinical indicators age, cholesterol, blood pressure, chest pain type into visual risk signals that clinicians can interpret in seconds.
+      </p>
+      <div class="project-impact">
+        <p><strong>Key insight:</strong> Age + cholesterol combinations that look normal individually become high-risk together the dashboard surfaces these hidden compound patterns.</p>
+      </div>
+      <div class="project-tools-row">
+        <span class="chip">Power BI</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Excel</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/udaydiwane/heart-disease-dashboard" class="btn-ghost" style="font-size:0.78rem;padding:0.55rem 1.2rem" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-world odd" id="proj3">
+    <div class="project-visual">
+      <canvas class="project-viz-canvas" id="viz-realestate"></canvas>
+    </div>
+    <div class="project-info">
+      <div>
+        <div class="project-num">03</div>
+        <div class="project-category">Economics</div>
+      </div>
+      <h3 class="project-title">Real Estate<br>Analysis</h3>
+      <p class="project-description">
+        Price prediction and market segmentation across India's housing market. Location, square footage, BHK configuration, and timing modelled together to surface pricing patterns.
+      </p>
+      <div class="project-impact">
+        <p><strong>Key insight:</strong> Proximity to metro stations contributes a 23% price premium but only when combined with specific locality tiers.</p>
+      </div>
+      <div class="project-tools-row">
+        <span class="chip">Python</span>
+        <span class="chip">Scikit-learn</span>
+        <span class="chip">NumPy</span>
+        <span class="chip">Tableau</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/udaydiwane/real-estate-powerbi-dashboard" class="btn-ghost" style="font-size:0.78rem;padding:0.55rem 1.2rem" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-world even" id="proj4">
+    <div class="project-visual">
+      <canvas class="project-viz-canvas" id="viz-kohli"></canvas>
+    </div>
+    <div class="project-info">
+      <div>
+        <div class="project-num">04</div>
+        <div class="project-category">Sports Analytics</div>
+      </div>
+      <h3 class="project-title">Virat Kohli<br>Performance Analysis</h3>
+      <p class="project-description">
+        Eleven years of international cricket data innings by innings, format by format, opposition by opposition. Finding what the scorecard can't tell you.
+      </p>
+      <div class="project-impact">
+        <p><strong>Key insight:</strong> Kohli's away average dropped 18% against left-arm pace in 2014–2016, then recovered fully a visible technique adaptation hidden inside the raw statistics.</p>
+      </div>
+      <div class="project-tools-row">
+        <span class="chip">Python</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">Matplotlib</span>
+        <span class="chip">Seaborn</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/udaydiwane/ViratKohli-PowerBI-Dashboard" class="btn-ghost" style="font-size:0.78rem;padding:0.55rem 1.2rem" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-world odd" id="proj5">
+    <div class="project-visual">
+      <canvas class="project-viz-canvas" id="viz-jobs"></canvas>
+    </div>
+    <div class="project-info">
+      <div>
+        <div class="project-num">05</div>
+        <div class="project-category">Labour Market</div>
+      </div>
+      <h3 class="project-title">Job Market<br>Analysis</h3>
+      <p class="project-description">
+        Which skills are growing? Which industries are hiring? Which cities dominate? A PostgreSQL + Power BI analysis of thousands of job listings to map the demand landscape.
+      </p>
+      <div class="project-impact">
+        <p><strong>Key insight:</strong> SQL + Python remains the highest-demand combination in data roles but Power BI is the fastest-growing secondary skill requirement in 2024–25.</p>
+      </div>
+      <div class="project-tools-row">
+        <span class="chip">PostgreSQL</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Power BI</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/udaydiwane/job_data_sql" class="btn-ghost" style="font-size:0.78rem;padding:0.55rem 1.2rem" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-world even" id="proj6">
+    <div class="project-visual">
+      <canvas class="project-viz-canvas" id="viz-screen"></canvas>
+    </div>
+    <div class="project-info">
+      <div>
+        <div class="project-num">06</div>
+        <div class="project-category">Behavioural</div>
+      </div>
+      <h3 class="project-title">Indian Kids Screen<br>Time Analysis</h3>
+      <p class="project-description">
+        A study of digital habits in Indian children — daily usage patterns, device preferences, educational vs entertainment splits, and correlation with sleep and academic performance.
+      </p>
+      <div class="project-impact">
+        <p><strong>Key insight:</strong> Children using screens 3+ hours/day before 8pm showed significantly lower deep sleep durations but educational content had a markedly smaller effect than entertainment.</p>
+      </div>
+      <div class="project-tools-row">
+        <span class="chip">Python</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">Power BI</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/udaydiwane/indian-kids-screen-time-analysis" class="btn-ghost" style="font-size:0.78rem;padding:0.55rem 1.2rem" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-world odd" id="proj7">
+    <div class="project-visual">
+      <canvas class="project-viz-canvas" id="viz-news"></canvas>
+    </div>
+    <div class="project-info">
+      <div>
+        <div class="project-num">07</div>
+        <div class="project-category">NLP / Fun</div>
+      </div>
+      <h3 class="project-title">Funny News<br>Generator</h3>
+      <p class="project-description">
+        An NLP project that scrapes real headlines, classifies their tone and topic, and generates satirical rewrites. Built to explore text processing, entity extraction, and language generation.
+      </p>
+      <div class="project-impact">
+        <p><strong>Key insight:</strong> Training on Indian English news required custom tokenisation standard NLP pipelines missed 30%+ of context due to code-switching between Hindi and English.</p>
+      </div>
+      <div class="project-tools-row">
+        <span class="chip">Python</span>
+        <span class="chip">NLTK</span>
+        <span class="chip">spaCy</span>
+        <span class="chip">Pandas</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/udaydiwane/funny-news-generator" class="btn-ghost" style="font-size:0.78rem;padding:0.55rem 1.2rem" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="scene-method">
+  <p class="scene-eyebrow">Chapter Five — The Method</p>
+  <h2 class="scene-heading">How an analyst<br><em>thinks.</em></h2>
+
+  <div class="method-grid">
+    <div class="method-steps">
+      <div class="method-step">
+        <span class="method-step-num">01</span>
+        <div>
+          <div class="method-step-title">Define the question first</div>
+          <div class="method-step-desc">Before opening a dataset, write down exactly what you need to know and why it matters. A vague question produces a vague answer.</div>
+        </div>
+      </div>
+      <div class="method-step">
+        <span class="method-step-num">02</span>
+        <div>
+          <div class="method-step-title">Understand the data's biography</div>
+          <div class="method-step-desc">Where did this data come from? Who collected it? What could be wrong with it? Every dataset has a backstory that shapes how you should trust it.</div>
+        </div>
+      </div>
+      <div class="method-step">
+        <span class="method-step-num">03</span>
+        <div>
+          <div class="method-step-title">Clean with decisions, not defaults</div>
+          <div class="method-step-desc">Dropping a null and filling a null are different choices. Every cleaning decision should be documented and justified it's the analyst's first set of assumptions.</div>
+        </div>
+      </div>
+      <div class="method-step">
+        <span class="method-step-num">04</span>
+        <div>
+          <div class="method-step-title">Explore until something surprises you</div>
+          <div class="method-step-desc">The finding you didn't expect is often the most valuable one. EDA shouldn't stop at distributions and correlations it should run until the data has nothing left to hide.</div>
+        </div>
+      </div>
+      <div class="method-step">
+        <span class="method-step-num">05</span>
+        <div>
+          <div class="method-step-title">Visualise one idea per chart</div>
+          <div class="method-step-desc">Every chart must communicate a single insight. If you need a legend explaining three different colour dimensions, the chart has failed before the viewer starts reading.</div>
+        </div>
+      </div>
+      <div class="method-step" style="border-bottom:none">
+        <span class="method-step-num">06</span>
+        <div>
+          <div class="method-step-title">Tell the story to someone non-technical</div>
+          <div class="method-step-desc">If you can't explain the insight to someone without a data background, you don't yet understand it well enough yourself. Clarity of communication is evidence of clarity of thinking.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="method-visual">
+      <canvas id="method-canvas"></canvas>
+    </div>
+  </div>
+</section>
+
+<section id="scene-future">
+  <canvas id="future-canvas"></canvas>
+  <div class="scene-future-inner future-content">
+    <p class="scene-eyebrow">Chapter Six — The Horizon</p>
+    <h2 class="scene-heading" style="max-width:600px">The journey continues.<br>The best part is <em>still ahead.</em></h2>
+
+    <div class="future-timeline">
+      <!-- Year column -->
+      <div class="future-year">2021</div>
+      <div class="future-event">
+        <h3>Started Diploma in IT</h3>
+        <p>Government Polytechnic Washim. The beginning of everything.</p>
+      </div>
+
+      <div class="future-year">2022</div>
+      <div class="future-event">
+        <h3>First Python Script</h3>
+        <p>The moment the machine did exactly what the code said and data started feeling less abstract.</p>
+      </div>
+
+      <div class="future-year">2023</div>
+      <div class="future-event">
+        <h3>First Dashboard</h3>
+        <p>Built something someone else could actually use. That feedback loop is what made data analytics feel worth pursuing.</p>
+      </div>
+
+      <div class="future-year">2024</div>
+      <div class="future-event">
+        <h3>Diploma Complete → Engineering Begins</h3>
+        <p>Lateral entry into B.E. IT. More rigour. More depth. More time to build real projects.</p>
+      </div>
+
+      <div class="future-year">2025</div>
+      <div class="future-event">
+        <h3>Seven Projects Shipped</h3>
+        <p>AQI. Heart disease. Real estate. Cricket. Jobs. Screen time. News. Seven datasets, seven stories, seven lessons.</p>
+      </div>
+
+      <div class="future-year">2026</div>
+      <div class="future-event">
+        <h3>Continuous Learning</h3>
+        <p>Cloud analytics, advanced ML, data engineering fundamentals. The stack keeps growing.</p>
+      </div>
+
+      <div class="future-year">2027</div>
+      <div class="future-event open">
+        <h3>Open to Opportunities</h3>
+        <p>Looking for a team where data solves real problems and curiosity is valued as much as experience.</p>
+        <span class="open-pill">Available</span>
+      </div>
+
+      <div class="future-year" style="color:var(--muted2)">?</div>
+      <div class="future-event open" style="border-bottom:none">
+        <h3 style="color:var(--muted)">Still Writing This Chapter.</h3>
+        <p>This milestone is blank. Let's fill it together.</p>
+        <div class="open-pill-1">
+          <span class="pill-default">  • Write to me</span>
+          <span class="pill-hover">Let's Write The Next Chapter →</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="scene-contact">
+  <h2 class="contact-statement">
+    Every project started<br><em>with a question.</em>
+  </h2>
+  <p class="contact-sub">
+    Every section above represents a lesson learned, a problem solved,
+    or a question explored through data. The story isn't finished yet.
+    If you'd like to talk about analytics, projects, internships, or
+    opportunities, let's connect.
+  </p>
+  <p class="contact-sub" style="font-size:0.88rem;color:var(--muted);margin-top:2rem;font-weight:300;line-height:1.75;max-width:400px">
+    Find me on the platforms where I build,
+    learn and share my work.
+  </p>
+  <div class="contact-orbs">
+    <a href="https://www.linkedin.com/in/uday-diwane" target="_blank" class="contact-orb">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2" fill="currentColor"/></svg>
+      Connect on LinkedIn
+    </a>
+    <a href="https://github.com/udaydiwane" target="_blank" class="contact-orb">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+      View GitHub
+    </a>
+    <a href="https://kaggle.com" target="_blank" class="contact-orb">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.332z"/></svg>
+      Explore Kaggle
+    </a>
+    <a href="mailto:diwaneuday@gmail.com" class="contact-orb">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      Send an Email
+    </a>
+    <a href="assets/Uday_Diwane.pdf" class="contact-orb" target="_blank" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download Resume
+    </a>
+  </div>
+  <br>
+  <p class="contact-sub">
+    Based in Maharashtra, India · Open to internships,
+    analytics roles and meaningful collaborations.
+  </p>
+</section>
+
+<footer>
+  <p>Uday Diwane — Data Analyst ·  Maharashtra</p>
+  <p>Built with curiosity &amp; Python · 2026</p>
+</footer>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
